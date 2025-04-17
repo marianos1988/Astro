@@ -1,0 +1,8 @@
+Instalar: npm create astro@latest
+
+
+MAs liviano: pnpm create astro@latest
+
+
+
+Para ver todos los colores dentro de VS Code debemos isntalar extensio Astro
