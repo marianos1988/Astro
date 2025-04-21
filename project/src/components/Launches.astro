@@ -1,0 +1,26 @@
+---
+
+//Ejecutar javascript
+
+const res = await fetch("https://api.chucknorris.io/jokes/random");
+const data = await res.json();
+console.log(data.id)
+const numbers = [1,2,3,4,5,6]
+---
+
+<div>
+    <ul>
+        <li>{data.id}</li>
+        <li>{data.created_at}</li>
+        <li>{data.icon_url}</li>
+        <li>{data.updated_at}</li>
+        <li>{data.url}</li>
+        <li>{data.value}</li>
+    </ul>
+      
+    <ul>
+        {numbers.map((number) => {
+            <li>{number}</li>
+        })}   
+    </ul>
+</div>
