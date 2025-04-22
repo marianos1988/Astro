@@ -1,0 +1,38 @@
+---
+
+const{ edad } = Astro.props;
+
+const sosMayor = edad >= 18 ? true : false
+---
+<div>
+    <div>
+        {(sosMayor)
+            ? (<h1 class="text-green">Sos Mayor</h1>)
+            : (<h1 class="text-red">Sos Menor</h1>)
+        }
+    </div>
+
+    <!-- <div>
+        <h1 class:list={[
+            "background",
+            {
+                "text-green": sosMayor,
+                "text-red": !sosMayor
+            }
+        ]}></h1>
+    </div> -->
+</div>
+
+
+
+<style>
+    .text-green {
+        color: green
+    }
+    .text-red {
+        color: red
+    }
+    .background {
+        background-color: rgb(72, 72, 224);
+    }
+</style>

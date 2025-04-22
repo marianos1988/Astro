@@ -1,5 +1,6 @@
 ---
 
+import Conditional from '../components/Conditional.astro';
 import Launches from '../components/Launches.astro';
 import Layout from '../layouts/Layout.astro';
 
@@ -8,4 +9,7 @@ console.log("escribir Javascript // Typescript")
 
 <Layout>
 	<Launches />
+	<Conditional edad={18}></Conditional>
+
+	<Conditional edad={17}></Conditional>
 </Layout>
