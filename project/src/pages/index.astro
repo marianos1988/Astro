@@ -3,12 +3,16 @@
 import Conditional from '../components/Conditional.astro';
 import Launches from '../components/Launches.astro';
 import Layout from '../layouts/Layout.astro';
-
+import { getLaunches } from '../services/services';
 console.log("escribir Javascript // Typescript")
+
+const info = await getLaunches();
 ---
 
 <Layout>
-	<Launches />
+	<Launches
+		info={info}
+	/>
 	<Conditional edad={18}></Conditional>
 
 	<Conditional edad={17}></Conditional>
